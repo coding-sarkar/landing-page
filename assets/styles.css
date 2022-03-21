@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 /* CSS Reset */
 * {
@@ -56,7 +57,6 @@ ul {
 
 .quote {
   font-size: 36px;
-  font-weight: lighter;
   font-style: italic;
   color: #1f2937;
 }
@@ -100,11 +100,12 @@ img {
 
 .website-details {
   height: 370px;
+  max-width: 530px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 30px;
 }
 
 .sign-up-button {
@@ -114,4 +115,108 @@ img {
   padding: 5px 30px;
   border-radius: 10px;
   border: none;
+}
+
+.cards-section {
+  height: 100vh;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.cards-section .cards-title {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cards-section .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.card-and-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  border: 5px solid rgb(19, 111, 218);
+  width: 175px;
+  height: 175px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  text-align: center;
+  max-width: 175px;
+}
+
+.quote-section {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-section div {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.quote-section div .quote {
+  font-style: italic;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.quote-section div .quote-author {
+  font-weight: 900;
+  text-align: end;
+  font-size: x-large;
+  padding-right: 50px;
+}
+
+.sign-up-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.sign-up-box {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 50px;
+  border-radius: 10px;
+}
+
+.sign-up-title {
+  color: #f9faf8;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.sign-up-subtext {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.sign-up-section .sign-up-button {
+  border: 3px solid #f9faf8;
+}
+
+.footer {
+  height: 10vh;
+  color: #f9faf8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
